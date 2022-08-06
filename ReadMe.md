@@ -126,3 +126,16 @@ If someone built a nice basis for a template, feel free to add it to this list a
 - [Jira Ticket](https://github.com/jmeischner/alfred-bear-jira-ticket)
 - [Daily Log](https://github.com/jmeischner/alfred-bear-daily-log)
 - [Create OKRs](https://github.com/jmeischner/alfred-bear-okrs)
+
+# Development
+
+To run and debug the project locally clone it then:
+
+```shell
+npm install
+npm install -g
+npm run dev
+```
+
+Workflow will be installed in alfred and symlinked to local files.
+Project will be rebuilt on every file change by the `tsc` watcher.
