@@ -154,7 +154,7 @@
           <key>argumenttype</key>
           <integer>0</integer>
           <key>subtext</key>
-          <string/>
+          <string>Update available: 1.0.8 → 1.0.9. Run `npm install -g alfred-bear`</string>
           <key>text</key>
           <string>{var:question}</string>
           <key>withspace</key>
@@ -230,7 +230,7 @@
           <key>queuemode</key>
           <integer>1</integer>
           <key>runningsubtext</key>
-          <string>Looking for Templates</string>
+          <string>Looking for templates...</string>
           <key>script</key>
           <string>./node_modules/.bin/run-node workflow/alfred/templates.js "$1"</string>
           <key>scriptargtype</key>
@@ -238,9 +238,9 @@
           <key>scriptfile</key>
           <string/>
           <key>subtext</key>
-          <string>choose template</string>
+          <string>Update available: 1.0.8 → 1.0.9. Run `npm install -g alfred-bear`</string>
           <key>title</key>
-          <string>Bear Template</string>
+          <string>Create New Bear Note From Template</string>
           <key>type</key>
           <integer>0</integer>
           <key>withspace</key>
@@ -321,6 +321,8 @@
           </array>
           <key>elselabel</key>
           <string>No Question</string>
+          <key>hideelse</key>
+          <false/>
         </dict>
         <key>type</key>
         <string>alfred.workflow.utility.conditional</string>
@@ -334,6 +336,10 @@
         <dict>
           <key>delimiter</key>
           <string>^</string>
+          <key>discardemptyarguments</key>
+          <false/>
+          <key>outputas</key>
+          <integer>0</integer>
           <key>trimarguments</key>
           <false/>
           <key>variableprefix</key>
@@ -430,7 +436,7 @@
       <key>5C8038DD-20A6-4A42-A79C-52993C619D5F</key>
       <dict>
         <key>xpos</key>
-        <integer>10</integer>
+        <integer>30</integer>
         <key>ypos</key>
         <integer>100</integer>
       </dict>
@@ -467,9 +473,11 @@
         <key>xpos</key>
         <integer>615</integer>
         <key>ypos</key>
-        <integer>10</integer>
+        <integer>15</integer>
       </dict>
     </dict>
+    <key>userconfigurationconfig</key>
+    <array/>
     <key>variables</key>
     <dict>
       <key>bearTemplateIndex</key>
